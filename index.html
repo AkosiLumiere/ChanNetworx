@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Christian Abuyan — IT Student</title>
+<meta name="description" content="Portfolio of Christian Abuyan, a BS Information Technology student with foundational skills in system administration, computer networking, and cybersecurity awareness.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ============ NAV ============ -->
+<header class="nav" id="nav">
+  <div class="nav__inner">
+    <a href="#home" class="nav__logo">CA<span class="nav__logo-dot">.</span></a>
+
+    <nav class="nav__links" id="navLinks">
+      <a href="#home" class="nav__link active" data-section="home">Home</a>
+      <a href="#about" class="nav__link" data-section="about">About</a>
+      <a href="#education" class="nav__link" data-section="education">Education</a>
+      <a href="#skills" class="nav__link" data-section="skills">Skills</a>
+      <a href="#certifications" class="nav__link" data-section="certifications">Certifications</a>
+      <a href="#projects" class="nav__link" data-section="projects">Projects</a>
+      <a href="#contact" class="nav__link" data-section="contact">Contact</a>
+    </nav>
+
+    <div class="nav__actions">
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode" aria-pressed="false">
+        <svg class="icon icon--sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2.4M12 19.1v2.4M4.2 4.2l1.7 1.7M18.1 18.1l1.7 1.7M2.5 12h2.4M19.1 12h2.4M4.2 19.8l1.7-1.7M18.1 5.9l1.7-1.7"/></svg>
+        <svg class="icon icon--moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M20 14.5A8.5 8.5 0 1 1 9.5 4a6.8 6.8 0 0 0 10.5 10.5z"/></svg>
+      </button>
+      <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="home">
+  <div class="hero__grid">
+    <div class="hero__text">
+      <p class="hero__eyebrow">// it student</p>
+      <h1 class="hero__name">Christian<br>Abuyan</h1>
+      <p class="hero__intro">
+        IT student with foundational know-how in system administration
+        and computer networking. I can support basic server and network
+        infrastructure, help keep things secure, and I'm eager to learn
+        newer technologies and contribute to efficient, stable IT operations.
+      </p>
+      <div class="hero__cta">
+        <a href="#projects" class="btn btn--primary">View My Projects</a>
+        <a href="#contact" class="btn btn--ghost">Contact Me</a>
+        <a href="Abuyan_Christian_CV.pdf" class="btn btn--ghost" download>Download CV</a>
+      </div>
+      <div class="hero__stats">
+        <div class="hero__stat">
+          <span class="hero__stat-num">BSIT</span>
+          <span class="hero__stat-label">currently studying</span>
+        </div>
+        <div class="hero__stat">
+          <span class="hero__stat-num">2023</span>
+          <span class="hero__stat-label">started college</span>
+        </div>
+        <div class="hero__stat">
+          <span class="hero__stat-num">2</span>
+          <span class="hero__stat-label">certifications earned</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero__visual" aria-hidden="true">
+      <svg id="topologySvg" viewBox="0 0 480 460" class="topology">
+        <!-- links drawn by JS-friendly static paths -->
+        <g class="topo-links" stroke="currentColor" fill="none">
+          <path class="topo-link" d="M240,230 L110,110" />
+          <path class="topo-link" d="M240,230 L360,90" />
+          <path class="topo-link" d="M240,230 L90,300" />
+          <path class="topo-link" d="M240,230 L380,290" />
+          <path class="topo-link" d="M240,230 L230,410" />
+          <path class="topo-link" d="M110,110 L360,90" />
+          <path class="topo-link" d="M90,300 L230,410" />
+        </g>
+        <g class="topo-nodes">
+          <circle class="topo-node topo-node--core" cx="240" cy="230" r="26"/>
+          <circle class="topo-node" cx="110" cy="110" r="12"/>
+          <circle class="topo-node" cx="360" cy="90" r="9"/>
+          <circle class="topo-node" cx="90" cy="300" r="10"/>
+          <circle class="topo-node" cx="380" cy="290" r="13"/>
+          <circle class="topo-node" cx="230" cy="410" r="9"/>
+        </g>
+        <text x="240" y="235" text-anchor="middle" class="topo-initials">CA</text>
+      </svg>
+    </div>
+  </div>
+
+  <button class="scroll-cue" id="scrollCue" aria-label="Scroll to about section">
+    <span></span>
+  </button>
+</section>
+
+<!-- ============ ABOUT ============ -->
+<section class="about section" id="about">
+  <div class="section__inner about__grid">
+    <div class="about__copy reveal">
+      <p class="section__eyebrow">About</p>
+      <h2 class="section__title">An IT student building a foundation in systems and security.</h2>
+      <p class="about__paragraph">
+        I'm a Bachelor of Science in Information Technology student at the
+        College of Our Lady of Mercy. I have foundational know-how in system
+        administration and computer networking, and I can support basic server
+        and network infrastructure while helping keep things secure.
+      </p>
+      <p class="about__paragraph">
+        I don't have formal work experience yet, but I'm willing to learn and
+        adapt quickly, and I bring strong communication and teamwork skills.
+        I'm eager to put my technical skills to work, learn newer technologies,
+        and contribute toward more efficient and stable IT operations.
+      </p>
+      <p class="about__paragraph">
+        My goal is to land a position where I can apply the knowledge and
+        skills from my Information Technology course, contribute to
+        organizational success, and keep growing professionally in technology
+        and information systems.
+      </p>
+
+      <div class="about__highlights">
+        <div class="highlight">
+          <span class="highlight__tag">Education</span>
+          <span class="highlight__value">BS Information Technology — College of Our Lady of Mercy</span>
+        </div>
+        <div class="highlight">
+          <span class="highlight__tag">Focus</span>
+          <span class="highlight__value">System administration, computer networking, cybersecurity awareness</span>
+        </div>
+        <div class="highlight">
+          <span class="highlight__tag">Currently</span>
+          <span class="highlight__value">Studying BSIT (2023 – present) and looking for a position to apply it</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="about__panel reveal">
+      <div class="device-panel">
+        <div class="device-panel__head">
+          <span class="device-dot"></span>
+          <span class="device-dot"></span>
+          <span class="device-dot"></span>
+          <span class="device-panel__title">status.log</span>
+        </div>
+        <div class="device-panel__body">
+          <p><span class="mono-key">host</span> christian-abuyan</p>
+          <p><span class="mono-key">role</span> it student</p>
+          <p><span class="mono-key">based_in</span> Sta. Cruz, Guiguinto, Bulacan</p>
+          <p><span class="mono-key">enrolled</span> 2023 – present</p>
+          <p><span class="mono-key">status</span> <span class="status-ok">● open to opportunities</span></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ EDUCATION ============ -->
+<section class="education section" id="education">
+  <div class="section__inner">
+    <p class="section__eyebrow">Education</p>
+    <h2 class="section__title">Where I've studied.</h2>
+
+    <div class="cert-list">
+
+      <div class="cert-card reveal">
+        <div class="cert-card__badge">COL</div>
+        <div class="cert-card__body">
+          <h3 class="cert-card__name">Bachelor of Science in Information Technology</h3>
+          <p class="cert-card__org">College of Our Lady of Mercy</p>
+          <div class="cert-card__meta"><span>2023 – present</span></div>
+        </div>
+      </div>
+
+      <div class="cert-card reveal">
+        <div class="cert-card__badge">SHS</div>
+        <div class="cert-card__body">
+          <h3 class="cert-card__name">Senior High School — STEM</h3>
+          <p class="cert-card__org">Guiguinto National Vocational High School</p>
+          <div class="cert-card__meta"><span>2021 – 2023</span><span>Science, Technology, Engineering and Mathematics</span></div>
+        </div>
+      </div>
+
+      <div class="cert-card reveal">
+        <div class="cert-card__badge">HS</div>
+        <div class="cert-card__body">
+          <h3 class="cert-card__name">High School</h3>
+          <p class="cert-card__org">Guiguinto National Vocational High School</p>
+          <div class="cert-card__meta"><span>2017 – 2021</span></div>
+        </div>
+      </div>
+
+      <div class="cert-card reveal">
+        <div class="cert-card__badge">ELEM</div>
+        <div class="cert-card__body">
+          <h3 class="cert-card__name">Elementary</h3>
+          <p class="cert-card__org">Sta. Cruz Elementary School</p>
+          <div class="cert-card__meta"><span>2011 – 2017</span></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ SKILLS ============ -->
+<section class="skills section" id="skills">
+  <div class="section__inner">
+    <p class="section__eyebrow">Skills</p>
+    <h2 class="section__title">What I bring to the team.</h2>
+
+    <div class="skills__grid">
+
+      <div class="skill-card reveal">
+        <div class="skill-card__head">
+          <span class="skill-card__name">Cyber Security Awareness</span>
+          <span class="skill-card__level">Technical</span>
+        </div>
+      </div>
+
+      <div class="skill-card reveal">
+        <div class="skill-card__head">
+          <span class="skill-card__name">Communication</span>
+          <span class="skill-card__level">Soft skill</span>
+        </div>
+      </div>
+
+      <div class="skill-card reveal">
+        <div class="skill-card__head">
+          <span class="skill-card__name">Teamwork and Collaboration</span>
+          <span class="skill-card__level">Soft skill</span>
+        </div>
+      </div>
+
+      <div class="skill-card reveal">
+        <div class="skill-card__head">
+          <span class="skill-card__name">Time Management</span>
+          <span class="skill-card__level">Soft skill</span>
+        </div>
+      </div>
+
+      <div class="skill-card reveal">
+        <div class="skill-card__head">
+          <span class="skill-card__name">Hardworking</span>
+          <span class="skill-card__level">Soft skill</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ CERTIFICATIONS ============ -->
+<section class="certifications section" id="certifications">
+  <div class="section__inner">
+    <p class="section__eyebrow">Certifications</p>
+    <h2 class="section__title">Credentials I've earned so far.</h2>
+
+    <div class="cert-list">
+
+      <div class="cert-card reveal">
+        <div class="cert-card__badge">CISCO</div>
+        <div class="cert-card__body">
+          <h3 class="cert-card__name">Introduction to Cybersecurity</h3>
+          <p class="cert-card__org">Cisco Networking Academy</p>
+          <div class="cert-card__meta">
+            <span>Completed 08 Nov 2025</span>
+          </div>
+        </div>
+        <a href="certificate/Introduction_to_Cybersecurity_certificate_christianzx08-gmail-com_46a39735-df80-4eb5-8fe3-d6d8064d1a57.pdf" class="btn btn--small" target="_blank" rel="noopener">View Certificate</a>
+      </div>
+
+      <div class="cert-card reveal">
+        <div class="cert-card__badge">TECH</div>
+        <div class="cert-card__body">
+          <h3 class="cert-card__name">Technopreneurship</h3>
+          <p class="cert-card__org">Wadhwani</p>
+          <div class="cert-card__meta">
+            <span>Certificate of Completion</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ PROJECTS ============ -->
+<section class="projects section" id="projects">
+  <div class="section__inner">
+    <p class="section__eyebrow">Projects</p>
+    <h2 class="section__title">Things I've built while learning.</h2>
+
+    <div class="projects__grid">
+
+      <article class="project-card reveal">
+        <div class="project-card__media" style="--from:#2F6F5E; --to:#0E1620;">
+          <span class="project-card__tag">Android</span>
+        </div>
+        <div class="project-card__body">
+          <h3>GoGetCash</h3>
+          <p>An Android app built to manage GCash cash-in/cash-out transactions and track money movement — a financial tracking tool for people who run a GCash agent or sub-agent business.</p>
+          <div class="project-card__stack"><span>Android Studio</span><span>Kotlin</span></div>
+          <div class="project-card__links">
+            <a href="https://github.com/Jeysixczs/GoGetCash" class="link-btn" target="_blank" rel="noopener">GitHub</a>
+            <a href="https://gogetcash.vercel.app" class="link-btn link-btn--primary" target="_blank" rel="noopener">Live Demo</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card reveal">
+        <div class="project-card__media" style="--from:#7A5C2E; --to:#0E1620;">
+          <span class="project-card__tag">Desktop</span>
+        </div>
+        <div class="project-card__body">
+          <h3>Ping Pong Game</h3>
+          <p>A two-player desktop ping pong game with paddle physics, score tracking, and adjustable difficulty, built as a Windows Forms app.</p>
+          <div class="project-card__stack">
+            <span>C#</span><span>.NET</span><span>Windows Forms</span>
+          </div>
+          <div class="project-card__links">
+            <a href="https://github.com/AkosiLumiere/PingPong" class="link-btn" target="_blank" rel="noopener">GitHub</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card reveal">
+        <div class="project-card__media" style="--from:#3A5A78; --to:#0E1620;">
+          <span class="project-card__tag">Desktop</span>
+        </div>
+        <div class="project-card__body">
+          <h3>SariSync</h3>
+          <p>A desktop Point of Sale (POS) and inventory management system for sari-sari stores, built with Windows Forms. It lets store owners track stock levels and sales, and generate reports.</p>
+          <div class="project-card__stack"><span>C#</span><span>.NET</span><span>Windows Forms</span><span>SQL Server</span><span>Swagger</span><span>MVP Structure</span></div>
+          <div class="project-card__links">
+            <a href="https://github.com/Jeysixczs/SariSync" class="link-btn" target="_blank" rel="noopener">GitHub</a>
+            <a href="https://sarisync-jet.vercel.app/login" class="link-btn link-btn--primary" target="_blank" rel="noopener">Live Demo</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card reveal">
+        <div class="project-card__media" style="--from:#6B3A4B; --to:#0E1620;">
+          <span class="project-card__tag">Web</span>
+        </div>
+        <div class="project-card__body">
+          <h3>Anatomia</h3>
+          <p>A web application that gives users a comprehensive understanding of human anatomy, with interactive 3D models, detailed descriptions, and quizzes to enhance learning.</p>
+          <div class="project-card__stack"><span>React</span><span>Three.js</span><span>HTML5</span><span>CSS3</span><span>JavaScript</span></div>
+          <div class="project-card__links">
+            <a href="https://github.com/Jeysixczs/Anatomixs" class="link-btn" target="_blank" rel="noopener">GitHub</a>
+            <a href="https://anatomia-website.vercel.app/" class="link-btn link-btn--primary" target="_blank" rel="noopener">Live Demo</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card reveal">
+        <div class="project-card__media" style="--from:#4A4A6B; --to:#0E1620;">
+          <span class="project-card__tag">Web</span>
+        </div>
+        <div class="project-card__body">
+          <h3>Portfolio Website</h3>
+          <p>This site — a hand-built portfolio focused on fast load times, accessible markup, and a network-topology-inspired hero.</p>
+          <div class="project-card__stack">
+            <span>HTML</span><span>CSS</span><span>JavaScript</span>
+          </div>
+          <div class="project-card__links">
+            <a href="#" class="link-btn">GitHub</a>
+            <a href="#" class="link-btn link-btn--primary">Live Demo</a>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section class="contact section" id="contact">
+  <div class="section__inner contact__grid">
+    <div class="contact__info reveal">
+      <p class="section__eyebrow">Contact</p>
+      <h2 class="section__title">Let's get you connected.</h2>
+      <p class="section__lead">
+        Have an opportunity, a question, or a project idea? Send me a
+        message — I'd love to hear from you.
+      </p>
+
+      <ul class="contact__list">
+        <li>
+          <span class="contact__label">Email</span>
+          <a href="mailto:christianzx08@gmail.com">christianzx08@gmail.com</a>
+        </li>
+        <li>
+          <span class="contact__label">Phone</span>
+          <a href="tel:+639950444600">0995-044-4600</a>
+        </li>
+        <li>
+          <span class="contact__label">Location</span>
+          <span>Sta. Cruz, Guiguinto, Bulacan</span>
+        </li>
+      </ul>
+    </div>
+
+    <form class="contact-form reveal" id="contactForm" novalidate>
+      <div class="form-row">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Your full name" autocomplete="name">
+        <span class="form-error" id="err-name"></span>
+      </div>
+
+      <div class="form-row">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="you@example.com" autocomplete="email">
+        <span class="form-error" id="err-email"></span>
+      </div>
+
+      <div class="form-row">
+        <label for="subject">Subject</label>
+        <input type="text" id="subject" name="subject" placeholder="What's this about?">
+        <span class="form-error" id="err-subject"></span>
+      </div>
+
+      <div class="form-row">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" placeholder="Tell me a bit about what you need..."></textarea>
+        <span class="form-error" id="err-message"></span>
+      </div>
+
+      <button type="submit" class="btn btn--primary btn--full">Send Message</button>
+      <p class="form-success" id="formSuccess" role="status" aria-live="polite">
+        Message sent — I'll reply soon.
+      </p>
+    </form>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="section__inner footer__inner">
+    <span>© 2026 Christian Abuyan. Built from scratch with HTML, CSS &amp; JS.</span>
+    <a href="#home" class="footer__top">Back to top ↑</a>
+  </div>
+</footer>
+
+<button class="back-to-top" id="backToTop" aria-label="Back to top">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+</button>
+
+<script src="script.js"></script>
+</body>
+</html>
