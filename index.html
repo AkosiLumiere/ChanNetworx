@@ -74,28 +74,11 @@
       </div>
     </div>
 
-    <div class="hero__visual" aria-hidden="true">
-      <svg id="topologySvg" viewBox="0 0 480 460" class="topology">
-        <!-- links drawn by JS-friendly static paths -->
-        <g class="topo-links" stroke="currentColor" fill="none">
-          <path class="topo-link" d="M240,230 L110,110" />
-          <path class="topo-link" d="M240,230 L360,90" />
-          <path class="topo-link" d="M240,230 L90,300" />
-          <path class="topo-link" d="M240,230 L380,290" />
-          <path class="topo-link" d="M240,230 L230,410" />
-          <path class="topo-link" d="M110,110 L360,90" />
-          <path class="topo-link" d="M90,300 L230,410" />
-        </g>
-        <g class="topo-nodes">
-          <circle class="topo-node topo-node--core" cx="240" cy="230" r="26"/>
-          <circle class="topo-node" cx="110" cy="110" r="12"/>
-          <circle class="topo-node" cx="360" cy="90" r="9"/>
-          <circle class="topo-node" cx="90" cy="300" r="10"/>
-          <circle class="topo-node" cx="380" cy="290" r="13"/>
-          <circle class="topo-node" cx="230" cy="410" r="9"/>
-        </g>
-        <text x="240" y="235" text-anchor="middle" class="topo-initials">CA</text>
-      </svg>
+    <div class="hero__visual">
+      <div class="portrait" tabindex="0">
+        <img class="portrait__img" src="images/me.jpg" alt="Portrait of Christian Abuyan" width="600" height="600">
+        <img class="portrait__img portrait__img--smile" src="images/me-smile.jpg" alt="" aria-hidden="true" width="600" height="600">
+      </div>
     </div>
   </div>
 
@@ -370,7 +353,7 @@
         </div>
         <div class="project-card__body">
           <h3>Portfolio Website</h3>
-          <p>This site — a hand-built portfolio focused on fast load times, accessible markup, and a network-topology-inspired hero.</p>
+          <p>This site — a hand-built portfolio focused on fast load times and accessible markup.</p>
           <div class="project-card__stack">
             <span>HTML</span><span>CSS</span><span>JavaScript</span>
           </div>
